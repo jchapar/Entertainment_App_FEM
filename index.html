@@ -4,8 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Boiler Plate | Tailwindcss</title>
+    <script src="js/script.js" defer></script>
+    <title>Entertainment App | Frontend Mentor</title>
   </head>
-  <body></body>
+  <body class="bg-dark">
+    <!-- Header -->
+    <header id="header" class="w-full h-[60px] bg-navy">
+      <nav id="nav" class="w-full h-full flex items-center justify-between p-5">
+        <!-- Logo -->
+        <div>
+          <img src="assets/logo.svg" alt="Logo" />
+        </div>
+        <!-- Menu -->
+        <ul class="flex space-x-5">
+          <!-- Menu Item -->
+          <li class="cursor-pointer">
+            <a href="#">
+              <img src="assets/icon-nav-home.svg" alt="Navigation Home" />
+            </a>
+          </li>
+          <!-- Menu Item -->
+          <li class="cursor-pointer">
+            <a href="#">
+              <img src="assets/icon-nav-movies.svg" alt="Navigation Movies" />
+            </a>
+          </li>
+          <!-- Menu Item -->
+          <li class="cursor-pointer">
+            <a href="#">
+              <img src="assets/icon-nav-tv-series.svg" alt="Navigation TV" />
+            </a>
+          </li>
+          <!-- Menu Item -->
+          <li class="cursor-pointer">
+            <a href="#">
+              <img src="assets/icon-nav-bookmark.svg" alt="Navigation Bookmark" />
+            </a>
+          </li>
+        </ul>
+        <!-- User -->
+        <div class="h-[25px] w-[25px] ring-2 ring-white rounded-full">
+          <img src="assets/image-avatar.png" alt="User Profile Image" class="w-full" />
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
