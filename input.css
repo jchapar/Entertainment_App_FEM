@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.faded-font {
+  @apply text-white opacity-50;
+}
+
+.scroller {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}

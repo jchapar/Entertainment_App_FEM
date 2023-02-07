@@ -16,7 +16,7 @@
   </head>
   <body class="bg-dark">
     <!-- Header -->
-    <header id="header" class="w-full h-[60px] bg-navy">
+    <header id="header" class="w-full h-[60px] bg-navy fixed top-0 right-0 left-0">
       <nav id="nav" class="w-full h-full flex items-center justify-between p-5">
         <!-- Logo -->
         <div>
@@ -55,5 +55,223 @@
         </div>
       </nav>
     </header>
+
+    <!-- Main -->
+    <main id="main" class="mt-[70px]">
+      <div class="">
+        <!-- Search Form-->
+        <form id="search-form" class="flex space-x-5 items-center mx-auto p-5">
+          <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M27.613 25.72 23.08 21.2a10.56 10.56 0 0 0 2.253-6.533C25.333 8.776 20.558 4 14.667 4S4 8.776 4 14.667c0 5.89 4.776 10.666 10.667 10.666A10.56 10.56 0 0 0 21.2 23.08l4.52 4.533a1.333 1.333 0 0 0 1.893 0 1.333 1.333 0 0 0 0-1.893ZM6.667 14.667a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z"
+              fill="#FFF"
+            />
+          </svg>
+          <input
+            type="text"
+            id="search"
+            class="search w-full bg-transparent font-[300] text-inherit opacity-50 text-white focus:outline-none"
+            placeholder="Search for movies or TV series"
+          />
+        </form>
+        <!-- Trending -->
+        <section id="trending" class="">
+          <div class="">
+            <!-- Heading -->
+            <div class="section-heading mb-4 text-[20px] tracking-wide mx-auto px-5">
+              <h2 class="text-white font-[300]">Trending</h2>
+            </div>
+            <!-- Scroller -->
+            <div class="scroller pl-5 py-4">
+              <!-- Item -->
+              <div class="item h-[140px] w-[240px] overflow-y-hidden rounded-lg relative">
+                <!-- Movie Poster -->
+                <img
+                  src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="overflow-hidden rounded-lg"
+                />
+                <!-- Bookmark container -->
+                <span
+                  class="bookmark-container absolute h-[32px] w-[32px] rounded-full top-2 right-2 bg-black bg-opacity-50 flex items-center justify-center"
+                >
+                  <svg class="z-20" width="12" height="14" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m10.518.75.399 12.214-5.084-4.24-4.535 4.426L.75 1.036l9.768-.285Z"
+                      stroke="#FFF"
+                      stroke-width="1.5"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+
+                <!-- Movie Details -->
+                <div
+                  class="movie-details faded-font absolute flex bottom-7 left-4 text-[12px] space-x-2"
+                >
+                  <span class="year">2019</span>
+                  <div class="flex items-center space-x-[2px]">
+                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.173 0H1.827A1.827 1.827 0 0 0 0 1.827v8.346C0 11.183.818 12 1.827 12h8.346A1.827 1.827 0 0 0 12 10.173V1.827A1.827 1.827 0 0 0 10.173 0ZM2.4 5.4H1.2V4.2h1.2v1.2ZM1.2 6.6h1.2v1.2H1.2V6.6Zm9.6-1.2H9.6V4.2h1.2v1.2ZM9.6 6.6h1.2v1.2H9.6V6.6Zm1.2-4.956V2.4H9.6V1.2h.756a.444.444 0 0 1 .444.444ZM1.644 1.2H2.4v1.2H1.2v-.756a.444.444 0 0 1 .444-.444ZM1.2 10.356V9.6h1.2v1.2h-.756a.444.444 0 0 1-.444-.444Zm9.6 0a.444.444 0 0 1-.444.444H9.6V9.6h1.2v.756Z"
+                        fill="#FFF"
+                        opacity=".75"
+                      />
+                    </svg>
+                    <span>Movie</span>
+                  </div>
+                  <span class="rating">PG</span>
+                </div>
+
+                <!-- Movie title -->
+                <div class="movie-title-container absolute z-50 left-4 bottom-2">
+                  <h3 class="text-white">Space X</h3>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="item h-[140px] w-[240px] overflow-y-hidden rounded-lg relative">
+                <!-- Movie Poster -->
+                <img
+                  src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="overflow-hidden rounded-lg"
+                />
+                <!-- Bookmark container -->
+                <span
+                  class="bookmark-container absolute h-[32px] w-[32px] rounded-full top-2 right-2 bg-black bg-opacity-50 flex items-center justify-center"
+                >
+                  <svg class="z-20" width="12" height="14" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m10.518.75.399 12.214-5.084-4.24-4.535 4.426L.75 1.036l9.768-.285Z"
+                      stroke="#FFF"
+                      stroke-width="1.5"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+
+                <!-- Movie Details -->
+                <div
+                  class="movie-details faded-font absolute flex bottom-7 left-4 text-[12px] space-x-2"
+                >
+                  <span class="year">2019</span>
+                  <div class="flex items-center space-x-[2px]">
+                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.173 0H1.827A1.827 1.827 0 0 0 0 1.827v8.346C0 11.183.818 12 1.827 12h8.346A1.827 1.827 0 0 0 12 10.173V1.827A1.827 1.827 0 0 0 10.173 0ZM2.4 5.4H1.2V4.2h1.2v1.2ZM1.2 6.6h1.2v1.2H1.2V6.6Zm9.6-1.2H9.6V4.2h1.2v1.2ZM9.6 6.6h1.2v1.2H9.6V6.6Zm1.2-4.956V2.4H9.6V1.2h.756a.444.444 0 0 1 .444.444ZM1.644 1.2H2.4v1.2H1.2v-.756a.444.444 0 0 1 .444-.444ZM1.2 10.356V9.6h1.2v1.2h-.756a.444.444 0 0 1-.444-.444Zm9.6 0a.444.444 0 0 1-.444.444H9.6V9.6h1.2v.756Z"
+                        fill="#FFF"
+                        opacity=".75"
+                      />
+                    </svg>
+                    <span>Movie</span>
+                  </div>
+                  <span class="rating">PG</span>
+                </div>
+
+                <!-- Movie title -->
+                <div class="movie-title-container absolute z-50 left-4 bottom-2">
+                  <h3 class="text-white">Space X</h3>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="item h-[140px] w-[240px] overflow-y-hidden rounded-lg relative">
+                <!-- Movie Poster -->
+                <img
+                  src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="overflow-hidden rounded-lg"
+                />
+                <!-- Bookmark container -->
+                <span
+                  class="bookmark-container absolute h-[32px] w-[32px] rounded-full top-2 right-2 bg-black bg-opacity-50 flex items-center justify-center"
+                >
+                  <svg class="z-20" width="12" height="14" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m10.518.75.399 12.214-5.084-4.24-4.535 4.426L.75 1.036l9.768-.285Z"
+                      stroke="#FFF"
+                      stroke-width="1.5"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+
+                <!-- Movie Details -->
+                <div
+                  class="movie-details faded-font absolute flex bottom-7 left-4 text-[12px] space-x-2"
+                >
+                  <span class="year">2019</span>
+                  <div class="flex items-center space-x-[2px]">
+                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.173 0H1.827A1.827 1.827 0 0 0 0 1.827v8.346C0 11.183.818 12 1.827 12h8.346A1.827 1.827 0 0 0 12 10.173V1.827A1.827 1.827 0 0 0 10.173 0ZM2.4 5.4H1.2V4.2h1.2v1.2ZM1.2 6.6h1.2v1.2H1.2V6.6Zm9.6-1.2H9.6V4.2h1.2v1.2ZM9.6 6.6h1.2v1.2H9.6V6.6Zm1.2-4.956V2.4H9.6V1.2h.756a.444.444 0 0 1 .444.444ZM1.644 1.2H2.4v1.2H1.2v-.756a.444.444 0 0 1 .444-.444ZM1.2 10.356V9.6h1.2v1.2h-.756a.444.444 0 0 1-.444-.444Zm9.6 0a.444.444 0 0 1-.444.444H9.6V9.6h1.2v.756Z"
+                        fill="#FFF"
+                        opacity=".75"
+                      />
+                    </svg>
+                    <span>Movie</span>
+                  </div>
+                  <span class="rating">PG</span>
+                </div>
+
+                <!-- Movie title -->
+                <div class="movie-title-container absolute z-50 left-4 bottom-2">
+                  <h3 class="text-white">Space X</h3>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="item h-[140px] w-[240px] overflow-y-hidden rounded-lg relative">
+                <!-- Movie Poster -->
+                <img
+                  src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                  class="overflow-hidden rounded-lg"
+                />
+                <!-- Bookmark container -->
+                <span
+                  class="bookmark-container absolute h-[32px] w-[32px] rounded-full top-2 right-2 bg-black bg-opacity-50 flex items-center justify-center"
+                >
+                  <svg class="z-20" width="12" height="14" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m10.518.75.399 12.214-5.084-4.24-4.535 4.426L.75 1.036l9.768-.285Z"
+                      stroke="#FFF"
+                      stroke-width="1.5"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+
+                <!-- Movie Details -->
+                <div
+                  class="movie-details faded-font absolute flex bottom-7 left-4 text-[12px] space-x-2"
+                >
+                  <span class="year">2019</span>
+                  <div class="flex items-center space-x-[2px]">
+                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.173 0H1.827A1.827 1.827 0 0 0 0 1.827v8.346C0 11.183.818 12 1.827 12h8.346A1.827 1.827 0 0 0 12 10.173V1.827A1.827 1.827 0 0 0 10.173 0ZM2.4 5.4H1.2V4.2h1.2v1.2ZM1.2 6.6h1.2v1.2H1.2V6.6Zm9.6-1.2H9.6V4.2h1.2v1.2ZM9.6 6.6h1.2v1.2H9.6V6.6Zm1.2-4.956V2.4H9.6V1.2h.756a.444.444 0 0 1 .444.444ZM1.644 1.2H2.4v1.2H1.2v-.756a.444.444 0 0 1 .444-.444ZM1.2 10.356V9.6h1.2v1.2h-.756a.444.444 0 0 1-.444-.444Zm9.6 0a.444.444 0 0 1-.444.444H9.6V9.6h1.2v.756Z"
+                        fill="#FFF"
+                        opacity=".75"
+                      />
+                    </svg>
+                    <span>Movie</span>
+                  </div>
+                  <span class="rating">PG</span>
+                </div>
+
+                <!-- Movie title -->
+                <div class="movie-title-container absolute z-50 left-4 bottom-2">
+                  <h3 class="text-white">Space X</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Recommended -->
+      </div>
+    </main>
   </body>
 </html>
