@@ -85,7 +85,7 @@
               <h2 class="text-white font-[300] text-[20px] md:text-[32px]">Trending</h2>
             </div>
             <!-- Scroller -->
-            <div class="scroller pl-5 py-4">
+            <div id="scroller" class="scroller pl-5 py-4">
               <!-- Item -->
               <div
                 class="item h-[140px] w-[240px] overflow-y-hidden rounded-lg relative md:w-[470px] md:h-[230px]"
@@ -293,7 +293,9 @@
           <div class="section-heading my-4 tracking-wide mx-auto px-5">
             <h2 class="text-white font-[300] text-[20px] md:text-[32px]">Recommended for you</h2>
           </div>
-          <div class="grid grid-cols-2 gap-4 px-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-2">
+          <div
+            class="recommended-container grid grid-cols-2 gap-4 px-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-2"
+          >
             <!-- Grid item -->
             <div class="md:max-w-[220px] lg:max-w-[280px]">
               <div class="relative mb-2">
