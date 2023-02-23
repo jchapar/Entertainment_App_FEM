@@ -1,0 +1,108 @@
+@media (min-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+
+  #header {
+    border-radius: 1rem;
+  }
+
+  .trending {
+    padding: 0;
+  }
+
+  .trending .swiper-slide {
+    width: 42rem !important;
+    height: 23rem;
+  }
+
+  .trending .swiper-slide .content .details {
+    font-size: 1.5rem;
+  }
+
+  .trending .swiper-slide .content .title {
+    font-size: 2.4rem;
+  }
+
+  .trending .section-heading h2,
+  .recommended .section-heading h2 {
+    font-size: 3.2rem;
+  }
+
+  .recommended {
+    padding: 0;
+  }
+
+  .recommended .grid-container {
+    grid-template-columns: repeat(3, minmax(22rem, 11fr));
+  }
+
+  .recommended .grid-container .grid-item {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .recommended .grid-container .grid-item .movie-img {
+    position: relative;
+    width: 22rem;
+    height: 14rem;
+  }
+
+  .recommended .grid-item .movie-details span {
+    font-size: 1.3rem;
+  }
+
+  .recommended .grid-item .movie-title h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #header {
+    position: fixed;
+    height: 90rem;
+    width: 9rem;
+    padding: 4rem 0;
+  }
+
+  #header .flex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+  }
+
+  #header .flex-container .logo-wrapper {
+    margin-bottom: 5rem;
+  }
+
+  #header .nav-icons ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 62rem;
+  }
+
+  #header .nav-icons ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  #header .profile-img-wrapper {
+    width: 4rem;
+  }
+
+  main {
+    margin-left: 12rem;
+  }
+
+  .recommended .grid-container {
+    grid-template-columns: repeat(4, minmax(28rem, 11fr));
+  }
+
+  .recommended .grid-container .grid-item .movie-img {
+    position: relative;
+    width: 28rem;
+    height: 17rem;
+  }
+}
