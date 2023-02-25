@@ -36,7 +36,7 @@ async function showTv() {
       div.innerHTML = `
       <div class="movie-img">
         <img src="${item.thumbnail.regular.large}" alt="${item.title}" class="movie-poster">
-        <div class="bookmark-wrapper">
+        <div class="bookmark-wrapper" id="bookmark-wrapper">
           <img src="assets/icon-bookmark-empty.svg" alt="Bookmark Empty" class="bookmark">
         </div>
       </div>
@@ -78,7 +78,7 @@ async function showMovies() {
       div.innerHTML = `
       <div class="movie-img">
         <img src="${item.thumbnail.regular.large}" alt="${item.title}" class="movie-poster">
-        <div class="bookmark-wrapper">
+        <div class="bookmark-wrapper" id="bookmark-wrapper">
           <img src="assets/icon-bookmark-empty.svg" alt="Bookmark Empty" class="bookmark">
         </div>
       </div>
@@ -157,7 +157,7 @@ async function fetchRecommendedData() {
 
       <div class="movie-img">
         <img src="${item.thumbnail.regular.large}" alt="${item.title}" class="movie-poster">
-        <div class="bookmark-wrapper">
+        <div class="bookmark-wrapper" id="bookmark-wrapper">
           <img src="assets/icon-bookmark-empty.svg" alt="Bookmark Empty" class="bookmark">
         </div>
       </div>
@@ -180,6 +180,17 @@ async function fetchRecommendedData() {
     }
   })
 }
+
+// Book Mark ============================================================================================================
+// function bookmark(e) {
+//   if (e.target.parentElement.id === 'bookmark-wrapper') {
+//     document.querySelector(
+//       '#bookmark-wrapper'
+//     ).innerHTML = `<img src="assets/icon-bookmark-full.svg" alt="Bookmark Empty" class="bookmark">`
+//   }
+// }
+
+// document.addEventListener('click', bookmark)
 
 // Init Swiper ============================================================================================================
 function initSwiper() {
