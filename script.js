@@ -1,7 +1,17 @@
-// Fetching Trending Data============================================================================================================
+// Clear UI============================================================================================================
 function clearUI() {
   document.querySelector('.recommended').style.display = 'none'
   document.querySelector('.trending').style.display = 'none'
+  document.querySelector('.filter').style.display = 'none'
+}
+
+// Filter Movies ============================================================================================================
+function showHomeScreen() {
+  clearUI()
+  // Fetching Trending Data
+  fetchTrendingData()
+  // Fetching Recommended Data
+  fetchRecommendedData()
 }
 
 // Filter Movies ============================================================================================================
@@ -47,6 +57,7 @@ async function showMovies() {
 
 // Fetching Trending Data============================================================================================================
 async function fetchTrendingData() {
+  document.querySelector('.trending').style.display = 'block'
   const response = await fetch('./data.json')
 
   const data = await response.json()
@@ -88,6 +99,7 @@ async function fetchTrendingData() {
 
 // Fetching Recommended Data============================================================================================================
 async function fetchRecommendedData() {
+  document.querySelector('.recommended').style.display = 'block'
   const response = await fetch('./data.json')
 
   const data = await response.json()
