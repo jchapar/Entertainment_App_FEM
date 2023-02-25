@@ -25,34 +25,41 @@
   }
 
   .trending .section-heading h2,
-  .recommended .section-heading h2 {
+  .recommended .section-heading h2,
+  .filter .section-heading h2 {
     font-size: 3.2rem;
   }
 
-  .recommended {
+  .recommended,
+  .filter {
     padding: 0;
   }
 
-  .recommended .grid-container {
+  .recommended .grid-container,
+  .filter .grid-container {
     grid-template-columns: repeat(3, minmax(22rem, 11fr));
   }
 
-  .recommended .grid-container .grid-item {
+  .recommended .grid-container .grid-item,
+  .filter .grid-container .grid-item {
     justify-self: center;
     align-self: center;
   }
 
-  .recommended .grid-container .grid-item .movie-img {
+  .recommended .grid-container .grid-item .movie-img,
+  .filter .grid-container .grid-item .movie-img {
     position: relative;
     width: 22rem;
     height: 14rem;
   }
 
-  .recommended .grid-item .movie-details span {
+  .recommended .grid-item .movie-details span,
+  .filter .grid-item .movie-details span {
     font-size: 1.3rem;
   }
 
-  .recommended .grid-item .movie-title h3 {
+  .recommended .grid-item .movie-title h3,
+  .filter .grid-item .movie-title h3 {
     font-size: 1.8rem;
   }
 }
@@ -100,11 +107,13 @@
     margin-left: 12rem;
   }
 
-  .recommended .grid-container {
+  .recommended .grid-container,
+  .filter .grid-container {
     grid-template-columns: repeat(4, minmax(28rem, 11fr));
   }
 
-  .recommended .grid-container .grid-item .movie-img {
+  .recommended .grid-container .grid-item .movie-img,
+  .filter .grid-container .grid-item .movie-img {
     position: relative;
     width: 28rem;
     height: 17rem;

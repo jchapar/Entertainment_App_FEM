@@ -204,32 +204,38 @@ li {
 }
 
 /* Recommended */
-.recommended {
+.recommended,
+.filter {
   padding: 0 2rem;
 }
 
-.recommended .section-heading {
+.recommended .section-heading,
+.filter .section-heading {
   margin-bottom: 2rem;
 }
 
-.recommended .section-heading h2 {
+.recommended .section-heading h2,
+.filter .section-heading h2 {
   font-size: 2rem;
   color: var(--white);
   font-weight: 300;
   letter-spacing: 1px;
 }
 
-.recommended .grid-container {
+.recommended .grid-container,
+.filter .grid-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(16.5rem, 11fr));
   gap: 1rem;
 }
 
-.recommended .grid-container .grid-item {
+.recommended .grid-container .grid-item,
+.filter .grid-container .grid-item {
   margin-bottom: 1rem;
 }
 
-.recommended .grid-container .grid-item .movie-img {
+.recommended .grid-container .grid-item .movie-img,
+.filter .grid-container .grid-item .movie-img {
   position: relative;
   width: 16.5rem;
   height: 10.1rem;
@@ -237,7 +243,8 @@ li {
   margin-bottom: 1rem;
 }
 
-.recommended .grid-container .grid-item .movie-img .movie-poster {
+.recommended .grid-container .grid-item .movie-img .movie-poster,
+.filter .grid-container .grid-item .movie-img .movie-poster {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -248,7 +255,8 @@ li {
   border-radius: 1rem;
 }
 
-.recommended .grid-container .grid-item .movie-img .bookmark-wrapper {
+.recommended .grid-container .grid-item .movie-img .bookmark-wrapper,
+.filter .grid-container .grid-item .movie-img .bookmark-wrapper {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -262,38 +270,49 @@ li {
   cursor: pointer;
 }
 
-.recommended .grid-container .grid-item .movie-img .bookmark-wrapper .bookmark {
+.recommended .grid-container .grid-item .movie-img .bookmark-wrapper .bookmark,
+.filter .grid-container .grid-item .movie-img .bookmark-wrapper .bookmark {
   width: 1.4rem;
   height: 1.5rem;
 }
 
-.recommended .grid-item .movie-details {
+.recommended .grid-item .movie-details,
+.filter .grid-item .movie-details {
   display: flex;
   color: var(--white);
   opacity: 0.75;
   margin-bottom: 0.75rem;
 }
 
-.recommended .grid-item .movie-details span:not(:last-child) {
+.recommended .grid-item .movie-details span:not(:last-child),
+.filter .grid-item .movie-details span:not(:last-child) {
   margin-right: 1rem;
 }
 
-.recommended .grid-item .movie-details .dot-two {
+.recommended .grid-item .movie-details .dot-two,
+.filter .grid-item .movie-details .dot-two {
   display: none;
 }
 
-.recommended .grid-item .genre {
+.recommended .grid-item .genre,
+.filter .grid-item .genre {
   display: flex;
 }
 
-.recommended .grid-item .genre img {
+.recommended .grid-item .genre img,
+.filter .grid-item .genre img {
   margin-right: 0.5rem;
   width: 1rem;
   height: 1rem;
 }
 
-.recommended .grid-item .movie-title h3 {
+.recommended .grid-item .movie-title h3,
+.filter .grid-item .movie-title h3 {
   font-size: 1.4rem;
   font-weight: 500;
   color: var(--white);
+}
+
+.filter {
+  display: none;
 }

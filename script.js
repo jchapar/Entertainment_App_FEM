@@ -1,4 +1,51 @@
 // Fetching Trending Data============================================================================================================
+function clearUI() {
+  document.querySelector('.recommended').style.display = 'none'
+  document.querySelector('.trending').style.display = 'none'
+}
+
+// Filter Movies ============================================================================================================
+async function showMovies() {
+  clearUI()
+
+  const response = await fetch('./data.json')
+
+  const data = await response.json()
+
+  document.querySelector('.filter').style.display = 'block'
+
+  data.forEach((item) => {
+    if (item.category === 'Movie') {
+      const div = document.createElement('div')
+      div.classList.add('grid-item')
+
+      div.innerHTML = `
+      <div class="movie-img">
+        <img src="${item.thumbnail.regular.large}" alt="${item.title}" class="movie-poster">
+        <div class="bookmark-wrapper">
+          <img src="assets/icon-bookmark-empty.svg" alt="Bookmark Empty" class="bookmark">
+        </div>
+      </div>
+      <div class="movie-details">
+        <span class="year">${item.year}</span>
+        <span class="dot-one">&#8226</span>
+        <span class="genre"
+          ><img src="assets/icon-category-${item.category}.svg" alt="${item.category}"
+        /><p>${item.category}</p></span>
+        <span class="dot-two">&#8226</span>
+        <span class="rating">${item.rating}</span>
+      </div>
+      <div class="movie-title">
+        <h3>${item.title}</h3>
+      </div>
+      `
+
+      document.querySelector('.filtered.grid-container').appendChild(div)
+    }
+  })
+}
+
+// Fetching Trending Data============================================================================================================
 async function fetchTrendingData() {
   const response = await fetch('./data.json')
 
